@@ -22,7 +22,7 @@
                 <a href="#featured">Featured</a>
 
                 <div class="fas fa-shopping-cart">
-                    <span>0</span>
+                    <span id="cartItemCount">0</span>
                 </div>
             </nav>
         </header>
@@ -31,7 +31,7 @@
 
     <section class="home" id="home">
         <h1 class="home-parallax">Welcome To Car World</h1>
-        <img class="home-parallax" src="İmage/tog.webp" alt="">
+        <img class="home-parallax" src="İmage/main2.png" alt="">
         <a href="#" class="btn">Explore</a>
     </section>
 
@@ -41,6 +41,21 @@
 
         <div class="vehicles-slider">
             <div class="wrapper">
+                <div class="box">
+                    <img src="İmage/car5.jpg" alt="">
+                    <div class="content">
+                        <h3>Dodge Challenger(Srt Hellcat)</h3>
+                        <div class="price">Price: $35000</div>
+                        <p>
+                            • 2020
+                            • 6.2L 8cyl Supercharger 8A
+                            • 717 hp @ 6000 rpm
+                            • Petrol
+
+                        </p>
+                    </div>
+                </div>
+
                 <div class="box">
                     <img src="İmage/car1.png" alt="">
                     <div class="content">
@@ -83,6 +98,21 @@
                     </div>
                 </div>
 
+                <div class="box">
+                    <img src="İmage/car4.jpg" alt="">
+                    <div class="content">
+                        <h3>Mercedes Amg GT</h3>
+                        <div class="price">Price: $69500</div>
+                        <p>
+                            • 2022
+                            • 4.0L 8cyl Turbo 7AM
+                            • 523 hp @ 5500 rpm
+                            • Petrol
+
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -98,66 +128,68 @@
                         <img src="İmage/tespih.jpg" alt="">
                         <h3>Tespih (for gear)</h3>
                         <p>Price: $156</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Tespih (for gear)', 156, 'İmage/tespih.jpg')">Buy Now</button>
                     </div>
 
                     <div class="box">
                         <img src="İmage/oil.png" alt="">
                         <h3>5L Oil</h3>
                         <p>Price: $10</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('5L Oils', 10, 'İmage/oil.png')">Buy Now</button>
                     </div>
                     <div class="box">
                         <img src="İmage/parf.webp" alt="">
                         <h3>Car Perfume</h3>
                         <p>Price: $5</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Car Parfume', 5, 'İmage/parf.webp')">Buy Now</button>
                     </div>
                     <div class="box">
                         <img src="İmage/cover.webp" alt="">
                         <h3>Car Cover</h3>
                         <p>Price: $20</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Car Cover', 20, 'İmage/cover.webp')">Buy Now</button>
                     </div>
                     <div class="box">
                         <img src="İmage/seatCover.jpg" alt="">
                         <h3>Car Seat Cover</h3>
                         <p>Price: $15</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Car Seat Cover', 15, 'İmage/seatCover.jpg')">Buy Now</button>
                     </div>
                     <div class="box">
                         <img src="İmage/washMachine.jpg" alt="">
                         <h3>Car Wash</h3>
                         <p>Price: $120</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Car Wash', 120, 'İmage/washMachine.jpg')">Buy Now</button>
                     </div>
                     <div class="box">
                         <img src="İmage/wax1.png" alt="">
                         <h3>Car Wax</h3>
                         <p>Price: $10</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Car Wax', 10, 'İmage/wax1.png')">Buy Now</button>
                     </div>
 
                     <div class="box">
                         <img src="İmage/tyre.jpg" alt="">
                         <h3>Car Tyre</h3>
                         <p>Price: $100</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Car Tyre', 100, 'İmage/tyre.jpg')">Buy Now</button>
                     </div>
 
                     <div class="box">
                         <img src="İmage/sponge.webp" alt="">
                         <h3>Sponge</h3>
                         <p>Price: $3</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Sponge', 3, 'İmage/sponge.webp')">Buy Now</button>
                     </div>
 
                     <div class="box">
                         <img src="İmage/phoneHolder.webp" alt="">
                         <h3>Phone Holder</h3>
                         <p>Price: $25</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn" onclick="addToCart('Phone Holder', 25, 'İmage/phoneHolder.webp')">Buy Now</button>
                     </div>
+
+                    
                 </div>
 
             </div>
@@ -171,50 +203,68 @@
                 <img src="İmage/a180.webp" alt="">
                 <h3>Mercedes A180</h3>
                 <div class="price">Price: $18000</div>
-                <a href="#" class="btn">Buy Now</a>
+                <button class="btn" onclick="addToCart('Mercedes A180', 18000, 'İmage/a180.webp')">Buy Now</button>
             </div>
 
             <div class="box">
-                <img src="İmage/mustang.png" alt="">
+                <img src="İmage/mustang2.jpg" alt="">
                 <h3>Ford Mustang</h3>
                 <div class="price">Price: $25000</div>
-                <a href="#" class="btn">Buy Now</a>
+                <button class="btn" onclick="addToCart('Ford Mustang', 25000, 'İmage/mustang2.jpg')">Buy Now</button>
             </div>
 
             <div class="box">
                 <img src="İmage/focus.webp" alt="">
                 <h3>Ford Focus</h3>
                 <div class="price">Price: $6000</div>
-                <a href="#" class="btn">Buy Now</a>
+                <button class="btn" onclick="addToCart('Ford Focus', 6000, 'İmage/focus.webp')">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="İmage/audi.jpg" alt="">
+                <h3>Audi A3</h3>
+                <div class="price">Price: $11500</div>
+                <button class="btn" onclick="addToCart('Audi A3', 11500, 'İmage/audi.jpg')">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="İmage/navara.jpg" alt="">
+                <h3>Nissan Navara</h3>
+                <div class="price">Price: $7650</div>
+                <button class="btn" onclick="addToCart('Nissan Navara', 7650, 'İmage/navara.jpg')">Buy Now</button>
             </div>
         </div>
 
     </section>
 
     <div class="cartTab">
+
         <h1>Shopping Cart</h1>
+        
         <div class="listCart">
             <div class="item">
                 <div class="image">
-                    <img src="İmage/parf.webp" alt="">
+                    <img src="" alt="">
                 </div>
                 <div class="name">
-                    Name
+                    
                 </div>
                 <div class="totalPrice">
-                    $156
+                    
                 </div>
                 <div class="quantity">
-                    <span class="minus"><</span>
-                            <span>1</span>
-                            <span class="plus">></span>
+                    <span class="minus"></span>
+                            <span id="addCounts"></span>
+                            <span class="plus"></span>
                 </div>
             </div>
         </div>
         <div class="btn">
             <button class="close">Close</button>
             <button class="checkOut">Check Out</button>
+            <button class="clearAll">Clear All</button>
         </div>
+        
     </div>
 
     <script src="script.js"></script>
