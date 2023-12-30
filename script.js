@@ -112,3 +112,4 @@ function clearCart() {
 document.querySelector('.clearAll').addEventListener('click', function() {
     clearCart(); 
 });
+
