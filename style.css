@@ -267,6 +267,7 @@ body.showCart .cartTab{
     color: #000000;
     border-radius: 50%;
     cursor: pointer;
+    font-size:2rem
 }
 
 .listCart .quantity span:nth-child(2){
