@@ -51,17 +51,17 @@ html{
 
 .header .fas span{
     display: flex;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     background-color: #404040;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    border-radius: 50%;
+    border-radius: 30%;
     position: absolute;
     top: 50%;
     right: -20px;
-
+    font-size: 1.5rem;
 }
 .heading{
     text-align: center;
@@ -98,7 +98,7 @@ html{
 
 
 .home{
-    padding-top: 15rem;
+    padding-top: 7rem;
     text-align: center;
     overflow-x: hidden;
 
@@ -223,11 +223,7 @@ html{
 }
 
 body.showCart .cartTab{
-    inset: 10% 0 0 auto;
-}
-
-body.showCart .container{
-    transform: translateX(-250px);
+    inset: 9% 0 0 auto;
 }
 
 .cartTab h1{
@@ -236,12 +232,14 @@ body.showCart .container{
     font-weight: 300;
 }
 
-.cartTab .btn{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+.cartTab .btn {
+    display: flex;
+    justify-content: space-between; /* Align buttons equally */
 }
 
-.cartTab .btn button{
+.cartTab .btn button {
+    flex: 1; /* Each button occupies equal space */
+    margin: 0 5px; /* Adjust margin between buttons */
     background-color: #ffffff;
     border: none;
     font-weight: 500;
